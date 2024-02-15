@@ -1,0 +1,456 @@
+.Nutrition {
+    background-image: url(../../Images/Nutrition_HomeImage.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1.2rem;
+    height: 300px;
+    margin: auto;
+    margin-bottom: 4rem;
+    width: 100%;
+}
+.Nutrition h1 {
+    font-size: 55px;
+}
+.Nutrition form {
+    background-color: white;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 0.5rem;
+    height: 48px;
+    padding: 0.2rem 0.2rem;
+}
+.Nutrition i {
+    border: none;
+    color: black;
+}
+.Nutrition input {
+    background-color: white;
+    border: none;
+    height: 40px;
+    outline: 0;
+    width: 500px;
+}
+.Nutrition input[type = "text"] {
+    font-family: 'Instrument Serif', serif;
+    font-size: 18px;
+    padding-left: 0.5rem;
+}
+#Utensils {
+    padding-left: 0.5rem;
+}
+#Search {
+    background-color: orangered;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    padding: 0.8rem 1.5rem;
+}
+.Nutrition span {
+    color: red;
+    font-size: 20px;
+    margin-top: 0.35rem;
+    text-align: center;
+}
+.Nutrition p {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+.Instruction {
+    margin: auto;
+    margin-bottom: 5rem;
+    width: 1400px;
+}
+.Instruction img {
+    border-radius: 5px;
+    height: 500px;
+    width: 500px;
+}
+.Instruction figure {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    column-gap: 2.5rem;
+    margin: auto;
+    margin-bottom: 1.5rem;
+    width: 1300px;
+}
+.Instruction figure div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+.Instruction figure div a {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 0.5rem;
+    text-decoration: none;
+}
+.Instruction figure div a:hover {
+    color:orangered;
+    font-weight: bold;
+}
+.Instruction figure div a i {
+    margin-top: 0.2rem;
+}
+.Instruction figure div p {
+    font-size: 20px;
+}
+#YouTube {
+    color: red;
+    font-size: 25px;
+}
+.Instruction h2 {
+    font-weight: bold; 
+    margin-top: 0.5rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    text-transform: capitalize;
+} 
+.Instruction h3 {
+    color: red;
+    font-size: 25px;
+} 
+.Instruction h4 {
+    font-size: 20px;
+    margin-bottom: 0.8rem;
+} 
+.Instruction figcaption div:first-child {
+    display: flex;
+    flex-direction: row;
+    column-gap: 8rem;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+.Instruction div li {
+    margin-bottom: 0.65rem;
+    width: 300px;
+}
+.Instruction figcaption div:last-child {
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.8rem;
+    justify-content: center;
+    margin-right: 1.5rem;
+    margin-top: 2rem;
+}
+.Instruction figcaption div:last-child section {
+    box-shadow: 1px 1px 4px black;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.35rem;
+    height: 80px;
+    padding-top: 0.5rem;
+    width: 110px;
+}
+.Instruction figcaption div:last-child section li {
+    list-style-type: none;
+    margin-left: 2rem;
+}
+
+@media (max-width: 768px) {
+    .Nutrition {
+        background-image: url(../../Images/Nutrition_HomeImage.jpg);
+        border-radius: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+        margin: auto;
+        margin-bottom: 2.5rem;
+        width: 100%;
+    }
+    .Nutrition h1 {
+        font-size: 35px;
+        margin-top: 4rem;
+    }
+    .Nutrition form {
+        width: 550px;
+    }
+    .Nutrition input {
+        background-color: white;
+        border: none;
+        height: 30px;
+        outline: 0;
+        width: 470px;
+    }
+    .Nutrition input[type = "text"] {
+        font-family: 'Instrument Serif', serif;
+        font-size: 16px;
+        padding-left: 0.5rem;
+    }
+    .Nutrition p {
+        font-size: 18px;
+        margin-top: -1rem;
+    }
+    #Search {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+    }
+    .Nutrition section:first-child p {
+        font-size: 15px;
+    }
+    .Instruction {
+        margin: auto;
+        width: 700px;
+    }
+    .Instruction img {
+        border-radius: 5px;
+        height: 600px;
+        width: 600px;
+    }
+    .Instruction figure {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 2.5rem;
+        margin: auto;
+        margin-bottom: 2.5rem;
+        width: 400px;
+    }
+    .Instruction figcaption  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0.5rem;
+    }
+    .Instruction h2 {
+        font-size: 25px;
+        text-align: center;
+        width: 400px;
+    } 
+    .Instruction figcaption div:last-child {
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        column-gap: 1rem;
+        row-gap: 1.5rem;
+    }
+    .Instruction figcaption div:last-child section {
+        box-shadow: 1px 1px 4px black;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.35rem;
+        height: 80px;
+        padding-top: 0.5rem;
+        width: 150px;
+    }
+    .Instruction figcaption div:last-child section li {
+        margin-left: 3rem;
+    }
+}
+
+@media (max-width: 428px) {
+    .Nutrition {
+        background-image: url(../../Images/Responsive_Nutrition_HomeImage.jpg);
+        border-radius: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 260px;
+        margin: auto;
+        margin-bottom: 2.5rem;
+        width: 100%;
+    }
+    .Nutrition h1 {
+        font-size: 25px;
+        margin-top: 4rem;
+    }
+    .Nutrition form {
+        width: 380px;
+    }
+    .Nutrition input {
+        background-color: white;
+        border: none;
+        height: 30px;
+        outline: 0;
+        width: 320px;
+    }
+    .Nutrition input[type = "text"] {
+        font-family: 'Instrument Serif', serif;
+        font-size: 16px;
+        padding-left: 0.5rem;
+    }
+    .Nutrition p {
+        font-size: 18px;
+        margin-top: -1rem;
+    }
+    #Search {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+    }
+    .Nutrition section:first-child p {
+        font-size: 15px;
+    }
+    .Instruction {
+        margin: auto;
+        width: 400px;
+    }
+    .Instruction img {
+        border-radius: 5px;
+        height: 350px;
+        width: 350px;
+    }
+    .Instruction figure {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 2.5rem;
+        margin: auto;
+        margin-bottom: 2.5rem;
+        width: 400px;
+    }
+    .Instruction figcaption  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0.5rem;
+    }
+    .Instruction h2 {
+        font-size: 25px;
+        text-align: center;
+        width: 400px;
+    } 
+    .Instruction figcaption div:last-child {
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+        column-gap: 1rem;
+        row-gap: 1.5rem;
+    }
+    .Instruction figcaption div:last-child section {
+        box-shadow: 1px 1px 4px black;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.35rem;
+        height: 80px;
+        padding-top: 0.5rem;
+        width: 90px;
+    }
+    .Instruction figcaption div:last-child section li {
+        margin-left: 1rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .Nutrition {
+        background-image: url(../../Images/Responsive_Nutrition_HomeImage.jpg);
+        border-radius: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 260px;
+        margin: auto;
+        margin-bottom: 2.5rem;
+        width: 100%;
+    }
+    .Nutrition h1 {
+        font-size: 25px;
+        margin-top: 4rem;
+    }
+    .Nutrition form {
+        width: 325px;
+    }
+    .Nutrition input {
+        background-color: white;
+        border: none;
+        height: 30px;
+        outline: 0;
+        width: 260px;
+    }
+    .Nutrition input[type = "text"] {
+        font-family: 'Instrument Serif', serif;
+        font-size: 16px;
+        padding-left: 0.5rem;
+    }
+    .Nutrition p {
+        font-size: 18px;
+        margin-top: -1rem;
+    }
+    #Search {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+    }
+    .Nutrition section:first-child p {
+        font-size: 15px;
+    }
+    .Instruction {
+        margin: auto;
+        width: 370px;
+    }
+    .Instruction img {
+        border-radius: 5px;
+        height: 250px;
+        width: 250px;
+    }
+    .Instruction figure {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 2.5rem;
+        margin: auto;
+        margin-bottom: 2.5rem;
+        width: 370px;
+    }
+    .Instruction figcaption  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0.5rem;
+    }
+    .Instruction h2 {
+        font-size: 20px;
+        text-align: center;
+        width: 250px;
+    } 
+    .Instruction figcaption div:last-child {
+        display: grid;
+        grid-template-columns: 90px 90px 90px;
+        column-gap: 0.5rem;
+        row-gap: 1.5rem;
+    }
+    .Instruction figcaption div:last-child section {
+        box-shadow: 1px 1px 4px black;
+        border-radius: 4px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.35rem;
+        height: 80px;
+        padding-top: 0.5rem;
+        width: 90px;
+    }
+    .Instruction figcaption div:last-child section li {
+        margin-left: 1rem;
+    }
+}
+

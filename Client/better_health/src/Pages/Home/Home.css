@@ -1,0 +1,164 @@
+.Home {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2.5rem;
+    margin: auto;
+    overflow-y: hidden;
+    width: 1300px;
+}
+.Home section:first-child h1 {
+    font-size: 40px;
+    margin-top: 5rem;
+    margin-bottom: 2.5rem;
+}
+.Home section:first-child h4 {
+    margin-top: 1.5rem;
+}
+.Home section:first-child div {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1.2rem;
+    margin-top: 2.5rem;
+}
+.Home section:first-child button {
+    background-color: #068ea9;
+    border: none;
+    border-radius: 3px;
+    font-family: 'Instrument Serif', serif;
+    font-size: 16px;
+    height: 42px;
+    padding: 0.8rem 0.8rem;
+    width: 150px;
+}
+.Navigate {
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+.Home section:nth-child(2) img {
+    border-radius: 0px 0px 0px 45px;
+    height: 785px;
+}
+
+@media (max-width: 768px) {
+    .Home {
+        overflow-x: hidden;
+        width: 750px;
+    }
+    .Home section:first-child  {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: 350px;
+    }
+    .Home section:first-child h1 {
+        font-size: 28px;
+        margin-top: -11rem;
+        width: 350px;
+    }
+    .Home section:first-child p {
+        width: 350px;
+    }
+    .Home section:first-child h4 {
+        width: 350px;
+    }
+    .Home section:first-child div {
+        display: grid;
+        grid-template-columns: 150px 150px;
+        row-gap: 1.5rem;
+        column-gap: 1rem;
+        margin-top: 2.5rem;
+    }
+    .Home section:first-child button {
+        width: 150px;
+    }
+    .Home section:last-child img {
+        width: 420px;
+    }
+}
+
+@media (max-width: 428px) {
+    .Home {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 0.5rem;
+        width: 400px;
+    }
+    .Home section:first-child  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        text-align: center;
+        width: 400px;
+    }
+    .Home section:first-child h1 {
+        font-size: 28px;
+        margin-top: 1rem;
+        width: 400px;
+    }
+    .Home section:first-child p {
+        width: 380px;
+    }
+    .Home section:first-child h4 {
+        width: 400px;
+    }
+    .Home section:first-child div {
+        display: grid;
+        grid-template-columns: 150px 150px;
+        row-gap: 1.5rem;
+        column-gap: 1rem;
+        margin-top: 2.5rem;
+    }
+    .Home section:first-child button {
+        width: 150px;
+    }
+    .Home section:last-child {
+        display: none;
+    }
+}
+
+@media (max-width: 375px) {
+    .Home {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 0.5rem;
+        width: 370px;
+    }
+    .Home section:first-child  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        width: 370px;
+    }
+    .Home section:first-child h1 {
+        font-size: 25px;
+        width: 300px;
+    }
+    .Home section:first-child p {
+        width: 300px;
+    }
+    .Home section:first-child h4 {
+        width: 300px;
+    }
+    .Home section:first-child div {
+        display: grid;
+        grid-template-columns: 140px 140px;
+        row-gap: 1.5rem;
+        column-gap: 0.4rem;
+        margin-top: 2.5rem;
+    }
+    .Home section:first-child button {
+        width: 140px;
+    }
+    .Home section:last-child {
+        display: none;
+    }
+}

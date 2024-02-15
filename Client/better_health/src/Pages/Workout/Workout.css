@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap');
+
+.MyWorkout section:first-child {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../../Images/Workout_Image.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    margin: auto;
+    margin-bottom: 2rem;
+    padding-bottom: 5rem;
+    width: 100%;
+}
+.MyWorkout section:first-child h1 {
+    color: white; 
+    font-size: 50px;
+    text-align: center;
+}
+.MyWorkout section:first-child h2 {
+    text-align: center;
+}
+.MyWorkout section:last-child {
+    display: grid;
+    grid-template-columns: 450px 450px 450px;
+    column-gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 2.5rem;
+    width: 80%;
+}
+.Gif {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 1200px;
+}
+.Loading {
+    margin: auto;
+    width: 600px;
+}
+.WorkoutLink {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.WorkoutLink div {
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.5rem;
+    margin-top: 1rem;
+}
+.WorkoutLink div i {
+    background-color: orangered;
+    border-radius: 50%;
+    color: black;
+    padding: 1rem 1rem;
+}
+.WorkoutLink div i:hover {
+    background-color: black;
+    color: orangered;
+}
+#Edit {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    margin-left: 15rem;
+}
+#Edit:hover::after {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    content: "Edit Ticket";
+    color: black;
+    font-family: 'Instrument Serif', serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px;
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%); 
+    width: 75px;
+    z-index: 1;
+}
+#Delete {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+#Delete:hover::after {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    content: "Delete Ticket";
+    color: black;
+    font-family: 'Instrument Serif', serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px;
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    width: 75px;
+    z-index: 1;
+}
+.WorkoutLink img {
+    border-radius: 5px;
+    width: 350px;
+}
+.MyWorkout section:last-child h1 { 
+    margin-top: 1rem;
+    text-align: center;
+}
+.MyWorkout section:last-child h1:hover {
+    color:darkcyan; 
+}
+.NoWorkout {
+    color:#068ea9; 
+    font-size: 40px;
+    margin: auto;
+    text-align: center;
+    width: 1300px;
+}
+
+@media (max-width: 768px) {
+    .MyWorkout section:first-child {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../../Images/Workout_Image.jpeg");
+        border-radius: 0px;
+        height: 200px;
+        margin: auto;
+        width: 100%;
+    }
+    .MyWorkout section:first-child h1 {
+        font-size: 35px;
+    }
+    .MyWorkout section:last-child {
+        display: grid;
+        grid-template-columns: 300px 300px;
+        align-items: center;
+        justify-content: center;
+        column-gap: 1rem;
+        row-gap: 1rem;
+        margin-top: 2rem;
+        width: 750px;
+    }
+    .Gif {
+        margin: auto;
+        width: 768px;
+    }
+    #Edit {
+        margin-left: 10.5rem;
+    }
+    .Loading {
+        display: block;
+        margin: auto;
+        width: 500px;
+    }
+    .MyWorkout section:last-child img {
+        width: 280px;
+    }
+    .MyWorkout section:last-child button {
+        width: 200px;
+    }
+    .NoWorkout {
+        color:darkcyan; 
+        font-size: 40px;
+        margin: auto;
+        text-align: center;
+        width: 768px;
+    }
+}
+
+@media (max-width: 428px) {
+    .MyWorkout section:first-child {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../../Images/Workout_Image.jpeg");
+        border-radius: 0px;
+        height: 200px;
+        margin: auto;
+        width: 100%;
+    }
+    .MyWorkout section:first-child h1 {
+        font-size: 45px;
+    }
+    .MyWorkout section:last-child {
+        display: grid;
+        grid-template-columns: 350px;
+        row-gap: 1rem;
+        width: 400px;
+    }
+    .Gif {
+        margin: auto;
+        width: 428px;
+    }
+    .Loading {
+        display: block;
+        margin: auto;
+        width: 350px;
+    }
+    .NoWorkout {
+        color:darkcyan; 
+        font-size: 40px;
+        margin: auto;
+        text-align: center;
+        width: 428px;
+    }
+}
+
+@media (max-width: 375px) {
+    .MyWorkout section:first-child {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../../Images/Workout_Image.jpeg");
+        border-radius: 0px;
+        height: 200px;
+        margin: auto;
+        margin-top: 0rem;
+        width: 100%;
+    }
+    .MyWorkout section:first-child h1 { 
+        font-size: 45px;
+    }
+    .MyWorkout section:last-child {
+        display: grid;
+        grid-template-columns: 350px;
+        row-gap: 1rem;
+        width: 370px;
+    }
+    .Gif {
+        margin: auto;
+        width: 375px;
+    }
+    .Loading {
+        display: block;
+        margin: auto;
+        width: 300px;
+    }
+    .NoWorkout {
+        color:darkcyan; 
+        font-size: 40px;
+        margin: auto;
+        text-align: center;
+        width: 375px;
+    }
+}

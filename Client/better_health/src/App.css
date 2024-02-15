@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+    width: 0.8rem;
+}
+html::-webkit-scrollbar-thumb {
+    background-color:#068ea9;;
+}
+html::-webkit-scrollbar-track {
+    background-color: white;
+}
+body {
+    font-family: 'Instrument Serif', serif;
+    font-size: 18px;
+}
+.MyFailure {
+    color: #068ea9;
+    font-size: 45px;
+    text-align: center;
+    width: 100%;
+}
+.Error {
+    color: red;
+    font-size: 19px;
+}
+
+@media (max-width: 768px) {
+    .App {
+        overflow-x: hidden;
+        width: 768px;
+    }
+}
+
+@media (max-width: 428px) {
+    .App {
+        overflow-x: hidden;
+        width: 428px;
+    }
+}
+@media (max-width: 375px) {
+    .App {
+        overflow-x: hidden;
+        width: 375px;
+    }
+}

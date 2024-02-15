@@ -1,0 +1,333 @@
+.Exercise section:first-child {
+    background-image: url(../../Images/Exercise_HomeImage.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    margin: auto;
+    margin-bottom: 2.5rem;
+    width: 100%;
+}
+.Exercise section:first-child h1 {
+    color: white;
+    font-size: 45px;
+    margin-bottom: 1.5rem;
+    text-transform: capitalize;
+}
+.Exercise section:first-child form {
+    background-color: white;
+    border-radius: 2px;
+    height: 45px;
+    margin-bottom: 0.35rem;
+    padding: 0.1rem 0rem;
+    text-align: center;
+    width: 600px;
+}
+.Exercise section:first-child form select {
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Instrument Serif', serif;
+    font-size: 18px;
+    height: 40px;
+    margin-bottom: 0.4rem;
+    margin-right: 6px;
+    outline: 0;
+    padding-left: 0.65rem;
+    width: 527px;
+}
+.Exercise section:first-child form button {
+    background-color: orangered;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    width: 60px;
+}
+.Exercise section:first-child form i {
+    font-size: 20px;
+    color: white;
+}
+.Exercise section:first-child form span {
+    color: red;
+    font-size: 20px;
+    margin-top: 0.35rem;
+    text-align: center;
+}
+.Exercise section:first-child form p {
+    color: white;
+    font-size: 20px;
+    margin-top: 0.35rem;
+    text-align: center;
+}
+.Failure {
+    color: #068ea9;;
+    font-size: 40px;
+    text-align: center;
+    width: 1200px;
+}
+.Exercise section:last-child {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    row-gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 4.5rem;
+    text-align: center;
+    width: 1200px;
+}
+.Exercise section:last-child div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ExerciseOptions {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+.ExerciseOptions div { 
+    margin-top: 0.5rem;
+    text-transform: capitalize;
+}
+.Exercise section:last-child article div h3 {
+    margin-top: 0.45rem;
+}
+.Exercise section:last-child h2 {
+    text-transform: capitalize;
+}
+.Exercise section:last-child h4 {
+    text-transform: capitalize;
+}
+.Link {
+    color: black;
+    text-decoration: none;
+}
+.Exercise section:last-child article {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+}
+.Exercise section:last-child button {
+    background-color: orangered;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    font-family: 'Instrument Serif', serif;
+    font-size: 19px;
+    margin-top: 1.8rem;
+    margin-bottom: 0rem;
+    padding: 0.5rem 0.5rem;
+    z-index: 3;
+}
+.Exercise section:last-child button:hover {
+    background-color: black;
+}
+.Bookmark {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+.Bookmark:hover::after {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    content: "Add to Favourites";
+    color: black;
+    font-family: 'Instrument Serif', serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px;
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%); 
+    width: 120px;
+    z-index: 1;
+}
+.Copy:hover {
+    background-color: black;
+}
+.Copy:hover::after {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    content: "Copy Exercise Link";
+    color: black;
+    font-family: 'Instrument Serif', serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px;
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%); 
+    width: 120px;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .Exercise section:first-child {
+        background-image: url(../../Images/Exercise_HomeImage.jpg);
+        border-radius: 0px;
+        height: 300px;
+        margin: auto;
+        width: 100%;
+    }
+    .Exercise section:first-child h1 {
+        font-size: 35px;
+    }
+    .Exercise section:first-child form {
+        background-color: white;
+        border-radius: 2px;
+        height: 45px;
+        margin-bottom: 0.55rem;
+        padding: 0.2rem 0rem;
+        width: 550px;
+    }
+    .Exercise section:first-child form select {
+        font-size: 15px;
+        width: 470px;
+    }
+    .Exercise section:first-child form option {
+        font-size: 15px;
+        padding-left: 0.5rem;
+    }
+    .Exercise section:first-child form button {
+        margin-left: 0.5rem;
+        width: 60px;
+    }
+    .Exercise section:first-child form p {
+        font-size: 16px;
+    }
+    .Failure {
+        color: rgb(28, 202, 202);
+        font-size: 25px;
+        text-align: center;
+        width: 700px;
+    }
+    .Exercise section:last-child {
+        display: grid;
+        grid-template-columns: 220px 220px 220px;
+        align-items: center;
+        justify-content: center;
+        column-gap: 1rem;
+        margin-top: 2rem;
+        width: 750px;
+    }
+    .Exercise section:last-child img {
+        width: 200px;
+    }
+    .Exercise section:last-child button {
+        width: 200px;
+    }
+}
+
+@media (max-width: 428px) {
+    .Exercise section:first-child {
+        background-image: url(../../Images/Responsive_Exercise_HomeImage.jpg);
+        border-radius: 0px;
+        height: 300px;
+        margin: auto;
+        width: 100%;
+    }
+    .Exercise section:first-child h1 {
+        font-size: 25px;
+    }
+    .Exercise section:first-child form {
+        background-color: white;
+        border-radius: 3px;
+        height: 45px;
+        margin-bottom: 0.55rem;
+        padding: 0.2rem 0rem;
+        width: 360px;
+    }
+    .Exercise section:first-child form select {
+        font-size: 15px;
+        height: 35px;
+        width: 295px;
+    }
+    .Exercise section:first-child form option {
+        font-size: 15px;
+        padding-left: 0.5rem;
+        width: 295px;
+    }
+    .Exercise section:first-child form button {
+        margin-left: 0.1rem;
+        width: 50px;
+    }
+    .Exercise section:first-child form p {
+        font-size: 16px;
+    }
+    .Failure {
+        color: rgb(28, 202, 202);
+        font-size: 25px;
+        text-align: center;
+        width: 350px;
+    }
+    .Exercise section:last-child {
+        display: grid;
+        grid-template-columns: 350px;
+        width: 400px;
+    }
+}
+
+@media (max-width: 375px) {
+    .Exercise section:first-child {
+        background-image: url(../../Images/Responsive_Exercise_HomeImage.jpg);
+        border-radius: 0px;
+        height: 300px;
+        margin: auto;
+        margin-top: 0rem;
+        width: 100%;
+    }
+    .Exercise section:first-child h1 { 
+        font-size: 25px;
+    }
+    .Exercise section:first-child form {
+        background-color: white;
+        border-radius: 2px;
+        height: 45px;
+        margin-bottom: 0.55rem;
+        padding: 0.2rem 0rem;
+        width: 332px;
+    }
+    .Exercise section:first-child form select {
+        font-size: 15px;
+        width: 260px;
+    }
+    .Exercise section:first-child form option {
+        font-size: 15px;
+        padding-left: 0.5rem;
+        width: 260px;
+    }
+    .Exercise section:first-child form button {
+        margin-left: 0.5rem;
+        width: 50px;
+    }
+    .Exercise section:first-child form p {
+        font-size: 16px;
+    }
+    .Failure {
+        color: rgb(28, 202, 202);
+        font-size: 25px;
+        text-align: center;
+        width: 250px;
+    }
+    .Exercise section:last-child {
+        display: grid;
+        grid-template-columns: 350px;
+        width: 370px;
+    }
+}
