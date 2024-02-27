@@ -20,7 +20,7 @@ const Header = () => {
     useEffect(() => {
         
         const FetchName  = async() => {
-            await Axios.get(`http://localhost:4000/Users/${userID}/Name`, {
+            await Axios.get(`https://better-health-server.onrender.com/Users/${userID}/Name`, {
             headers: { authorization: Cookie.auth_token },
             }) 
             .then((Response) => {

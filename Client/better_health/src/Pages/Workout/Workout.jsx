@@ -18,7 +18,7 @@ const Workout = () => {
     useEffect(() => {
 
     const fetchExercise = async () => {
-        Axios.get(`http://localhost:4000/Exercise/${userID}/Workout`, { 
+        Axios.get(`https://better-health-server.onrender.com/Exercise/${userID}/Workout`, { 
         headers: { authorization: Cookie.auth_token }
         }) 
         .then((Data) => {
@@ -38,7 +38,7 @@ const Workout = () => {
     // Delete Workout
 
     const handleDelete= (_id) => {
-        Axios.delete(`http://localhost:4000/Exercise/${_id}`, {
+        Axios.delete(`https://better-health-server.onrender.com/Exercise/${_id}`, {
             headers: { authorization: Cookie.auth_token }
         }) 
         .then(

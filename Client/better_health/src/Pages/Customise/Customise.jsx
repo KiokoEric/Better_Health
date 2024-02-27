@@ -111,7 +111,7 @@ const Customise = () => {
                 Name, Muscle, Category, Instructions, Image, userOwner
             }
             try {
-                Axios.post("http://localhost:4000/Exercise/AddWorkout", data , {
+                Axios.post("https://better-health-server.onrender.com/Exercise/AddWorkout", data , {
                     headers: { authorization: Cookie.auth_token }
                 }) 
                 .then(() => { 

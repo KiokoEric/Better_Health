@@ -41,7 +41,7 @@ const Profile = () => {
 
         const FetchUser =() => {
         try{
-            Axios.get(`http://localhost:4000/Users/${userID}`, {
+            Axios.get(`https://better-health-server.onrender.com/Users/${userID}`, {
             headers: { authorization: Cookie.auth_token },
             }) 
             .then((Data) => { 

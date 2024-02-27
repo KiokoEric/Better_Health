@@ -20,7 +20,7 @@ const Edit = () => {
     const { _id } = useParams()
 
     useEffect(() => {
-        Axios.get(`http://localhost:4000/Exercise/MyWorkouts/${_id}`, {
+        Axios.get(`https://better-health-server.onrender.com/Exercise/MyWorkouts/${_id}`, {
                 headers: { authorization: Cookie.auth_token },
             }) 
         .then((Data) => { 
@@ -39,7 +39,7 @@ const Edit = () => {
             Name, Muscle, Category, Instructions, Image, userOwner
         }
         try {
-            Axios.put(`http://localhost:4000/Exercise/${_id}`, data , {
+            Axios.put(`https://better-health-server.onrender.com/Exercise/${_id}`, data , {
                 headers: { authorization: Cookie.auth_token },
             }) 
             .then(() => { 

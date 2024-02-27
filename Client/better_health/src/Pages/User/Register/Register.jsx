@@ -46,7 +46,7 @@ const Register = () => {
                 Name, Email, Password
             }
             try {
-                await Axios.post("http://localhost:4000/Users/Registration", data)
+                await Axios.post("https://better-health-server.onrender.com/Users/Registration", data)
                 .then(() => {
                     enqueueSnackbar("Registration Completed! Kindly Log in", {variant: "success"})
                     navigate("/Login")
