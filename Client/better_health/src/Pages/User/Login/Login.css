@@ -18,7 +18,7 @@
     color: white;
     font-size: 50px;
 }
-.Login section:last-child {
+.Login section:last-child { 
     display: flex; 
     flex-direction: column;
     align-items: center;
@@ -139,6 +139,9 @@
         border-radius: 3px;
         height: 40px;
         outline: 0;
+        width: 350px;
+    }
+    .Login div article {
         width: 350px;
     }
     .Login form button {
