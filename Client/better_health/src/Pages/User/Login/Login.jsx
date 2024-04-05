@@ -38,6 +38,7 @@ const Login = () => {
                 setCookie("auth_token", response.data.Token)
                 window.localStorage.setItem("UserID", response.data.UserID)
                 enqueueSnackbar("Logged in successfully!" , {variant: "success"}) 
+                window.location.reload();
         } catch (error) { 
             enqueueSnackbar("Login unsuccessful!" , {variant: "error"}) 
             console.log(error) 
@@ -55,6 +56,7 @@ const Login = () => {
                 setCookie("auth_token", response.data.Token)
                 window.localStorage.setItem("UserID", response.data.UserID)
                 enqueueSnackbar("Logged in successfully!" , {variant: "success"}) 
+                window.location.reload();
         } catch (error) { 
             enqueueSnackbar("Login unsuccessful!" , {variant: "error"}) 
             console.log(error) 
