@@ -36,18 +36,19 @@ const Exercise = () => {
         if(Search === "") {
             setSearchError("Kindly select one of the options above.")
         } else {
-            const url = `https://exercisedb.p.rapidapi.com/exercises/bodyPart/${Search}`;
+            const url = 'https://exercisedb.p.rapidapi.com/exercises/bodyPart/back';
             const options = {
             method: 'GET',
             headers: {
-                'X-RapidAPI-Key': '5900d31798msha8dd7877bd6558dp109800jsn25f147783e1b',
-                'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com'
-            }
+                'x-rapidapi-key': '5900d31798msha8dd7877bd6558dp109800jsn25f147783e1b',
+                'x-rapidapi-host': 'exercisedb.p.rapidapi.com'
+	        }
         };
 
         try {
             const response = await fetch(url, options);
             const result = await response.json();
+            console.log(result)
             setExercises(result)
             setSearchError("")
         } catch (error) {

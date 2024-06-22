@@ -100,23 +100,23 @@ const Fitness = () => {
                     <div>
                         <form action="">
                             <h4>Height</h4>
-                            <div>
-                                <input type="text" name="" id="" placeholder='Enter height in centimetres' value={Height} onChange={handleHeight} 
+                            <div className='flex flex gap-2'>
+                                <input type="text" name="" id="" placeholder='Enter height in centimetres' value={Height} onChange={handleHeight} className='outline-none px-2 py-1 text-black'
                                 />
-                                <p>Centimetres</p>
+                                <p className='font-bold'>Centimetres</p>
                             </div>
                         </form>
                         <form action="">
                             <h4>Weight</h4>
-                            <div>
-                                <input type="text" name="" id="" placeholder='Enter weight in kilograms' value={Weight} onChange={handleWeight} />
-                                <p>Kilograms</p>
+                            <div className='flex flex gap-2'>
+                                <input type="text" name="" id="" placeholder='Enter weight in kilograms' value={Weight} onChange={handleWeight} className='outline-none px-2 py-1 text-black' />
+                                <p className='font-bold'>Kilograms</p>
                             </div>
                         </form> 
                     </div>
                     <span>{BMIError}</span>
                     <button onClick={BMICalculator}>Calculate</button>
-                    <div>
+                    <div className='flex gap-10' >
                         <h3>BMI Value: <span>{Items.BMI}</span> </h3>
                         <h3>Class: <span>{Items.Class}</span> </h3>
                     </div>
